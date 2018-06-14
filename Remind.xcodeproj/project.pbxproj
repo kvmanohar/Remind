@@ -54,14 +54,38 @@
 		CEDB63F720D2F38A0008124F /* Remind */ = {
 			isa = PBXGroup;
 			children = (
-				CEDB63F820D2F38A0008124F /* AppDelegate.swift */,
-				CEDB63FA20D2F38A0008124F /* ViewController.swift */,
-				CEDB63FC20D2F38A0008124F /* Main.storyboard */,
-				CEDB63FF20D2F38B0008124F /* Assets.xcassets */,
-				CEDB640120D2F38B0008124F /* LaunchScreen.storyboard */,
+				CEDB640A20D2F3CE0008124F /* Model */,
+				CEDB640B20D2F3DD0008124F /* View */,
+				CEDB640C20D2F3E30008124F /* Controller */,
 				CEDB640420D2F38B0008124F /* Info.plist */,
 			);
 			path = Remind;
+			sourceTree = "<group>";
+		};
+		CEDB640A20D2F3CE0008124F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEDB640B20D2F3DD0008124F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEDB63FF20D2F38B0008124F /* Assets.xcassets */,
+				CEDB63FC20D2F38A0008124F /* Main.storyboard */,
+				CEDB640120D2F38B0008124F /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CEDB640C20D2F3E30008124F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CEDB63F820D2F38A0008124F /* AppDelegate.swift */,
+				CEDB63FA20D2F38A0008124F /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
