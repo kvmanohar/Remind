@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14269.12" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14252.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,83 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Remind" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ya9-Xh-kpb" customClass="ShadowView" customModule="Remind" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="TmI-GL-xwm">
+                                        <rect key="frame" x="15" y="24.5" width="270" height="251"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bf-cP-MG9">
+                                                <rect key="frame" x="85" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="ocu-9j-Tx8"/>
+                                                    <constraint firstAttribute="height" constant="100" id="x4i-fs-HOH"/>
+                                                </constraints>
+                                                <state key="normal" title="Button" image="timerIcon"/>
+                                                <connections>
+                                                    <action selector="timerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bza-MN-4BZ"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="ocy-Uv-TPD">
+                                                <rect key="frame" x="0.0" y="151" width="270" height="100"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXi-ki-440">
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="Bkr-nq-qMD"/>
+                                                            <constraint firstAttribute="height" constant="100" id="pHe-J0-MZS"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button" image="dateIcon"/>
+                                                        <connections>
+                                                            <action selector="dateTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RFD-uI-M9G"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Zt-dT-iKd">
+                                                        <rect key="frame" x="170" y="0.0" width="100" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="100" id="2lZ-AS-CBR"/>
+                                                            <constraint firstAttribute="height" constant="100" id="FuQ-ww-cGO"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button" image="locationIcon"/>
+                                                        <connections>
+                                                            <action selector="locationTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UnO-XS-gwI"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="0Lg-fJ-EsA"/>
+                                    <constraint firstItem="TmI-GL-xwm" firstAttribute="centerX" secondItem="ya9-Xh-kpb" secondAttribute="centerX" id="kJG-h7-M2m"/>
+                                    <constraint firstAttribute="height" constant="300" id="plY-Vc-uSc"/>
+                                    <constraint firstItem="TmI-GL-xwm" firstAttribute="centerY" secondItem="ya9-Xh-kpb" secondAttribute="centerY" id="tO8-B6-J63"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.91734483506944442" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ya9-Xh-kpb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4nh-eP-E8u"/>
+                            <constraint firstItem="ya9-Xh-kpb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZDc-hg-Pra"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dateIcon" width="100" height="100"/>
+        <image name="locationIcon" width="100" height="100"/>
+        <image name="timerIcon" width="100" height="100"/>
+    </resources>
 </document>

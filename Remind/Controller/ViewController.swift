@@ -9,12 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func timerTapped(_ sender: UIButton) {
+        print("Timer Tappped")
+    }
+    
+    @IBAction func locationTapped(_ sender: UIButton) {
+        print("Location Tapped")
+        
+    }
+    
+    @IBAction func dateTapped(_ sender: UIButton) {
+        print("Date Tapped")
+    }
+    
 }
 
