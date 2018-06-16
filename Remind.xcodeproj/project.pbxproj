@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEAF972F20D5496F00BF6896 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF972E20D5496F00BF6896 /* AlertService.swift */; };
 		CEDB63F920D2F38A0008124F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB63F820D2F38A0008124F /* AppDelegate.swift */; };
 		CEDB63FB20D2F38A0008124F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB63FA20D2F38A0008124F /* ViewController.swift */; };
 		CEDB63FE20D2F38A0008124F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDB63FC20D2F38A0008124F /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CEAF972E20D5496F00BF6896 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		CEDB63F520D2F38A0008124F /* Remind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDB63F820D2F38A0008124F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEDB63FA20D2F38A0008124F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				CEDB641020D519BF0008124F /* UNService.swift */,
+				CEAF972E20D5496F00BF6896 /* AlertService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				CEDB63FB20D2F38A0008124F /* ViewController.swift in Sources */,
 				CEDB641120D519BF0008124F /* UNService.swift in Sources */,
 				CEDB63F920D2F38A0008124F /* AppDelegate.swift in Sources */,
+				CEAF972F20D5496F00BF6896 /* AlertService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
