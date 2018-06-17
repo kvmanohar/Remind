@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE70102620D6D458009FCAE6 /* NotificationAttachmentID.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70102520D6D458009FCAE6 /* NotificationAttachmentID.swift */; };
+		CE70102A20D6D587009FCAE6 /* LocationAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = CE70102820D6D587009FCAE6 /* LocationAlert.png */; };
+		CE70102B20D6D587009FCAE6 /* DateAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = CE70102920D6D587009FCAE6 /* DateAlert.png */; };
+		CE70102D20D6D598009FCAE6 /* TimeAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = CE70102C20D6D598009FCAE6 /* TimeAlert.png */; };
 		CEAF972F20D5496F00BF6896 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF972E20D5496F00BF6896 /* AlertService.swift */; };
 		CEAF973120D675ED00BF6896 /* CLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF973020D675ED00BF6896 /* CLService.swift */; };
 		CEDB63F920D2F38A0008124F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB63F820D2F38A0008124F /* AppDelegate.swift */; };
@@ -19,6 +23,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE70102520D6D458009FCAE6 /* NotificationAttachmentID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAttachmentID.swift; sourceTree = "<group>"; };
+		CE70102820D6D587009FCAE6 /* LocationAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocationAlert.png; sourceTree = "<group>"; };
+		CE70102920D6D587009FCAE6 /* DateAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DateAlert.png; sourceTree = "<group>"; };
+		CE70102C20D6D598009FCAE6 /* TimeAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimeAlert.png; sourceTree = "<group>"; };
 		CEAF972E20D5496F00BF6896 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		CEAF973020D675ED00BF6896 /* CLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLService.swift; sourceTree = "<group>"; };
 		CEDB63F520D2F38A0008124F /* Remind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remind.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +51,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE70102720D6D54A009FCAE6 /* NotificationAssets */ = {
+			isa = PBXGroup;
+			children = (
+				CE70102C20D6D598009FCAE6 /* TimeAlert.png */,
+				CE70102920D6D587009FCAE6 /* DateAlert.png */,
+				CE70102820D6D587009FCAE6 /* LocationAlert.png */,
+			);
+			path = NotificationAssets;
+			sourceTree = "<group>";
+		};
 		CEDB63EC20D2F38A0008124F = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +92,7 @@
 		CEDB640A20D2F3CE0008124F /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE70102520D6D458009FCAE6 /* NotificationAttachmentID.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -81,6 +100,7 @@
 		CEDB640B20D2F3DD0008124F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CE70102720D6D54A009FCAE6 /* NotificationAssets */,
 				CEDB63FF20D2F38B0008124F /* Assets.xcassets */,
 				CEDB63FC20D2F38A0008124F /* Main.storyboard */,
 				CEDB640120D2F38B0008124F /* LaunchScreen.storyboard */,
@@ -167,8 +187,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEDB640320D2F38B0008124F /* LaunchScreen.storyboard in Resources */,
+				CE70102B20D6D587009FCAE6 /* DateAlert.png in Resources */,
+				CE70102A20D6D587009FCAE6 /* LocationAlert.png in Resources */,
 				CEDB640020D2F38B0008124F /* Assets.xcassets in Resources */,
 				CEDB63FE20D2F38A0008124F /* Main.storyboard in Resources */,
+				CE70102D20D6D598009FCAE6 /* TimeAlert.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE70102620D6D458009FCAE6 /* NotificationAttachmentID.swift in Sources */,
 				CEAF973120D675ED00BF6896 /* CLService.swift in Sources */,
 				CEDB640E20D428100008124F /* ShadowView.swift in Sources */,
 				CEDB63FB20D2F38A0008124F /* ViewController.swift in Sources */,
