@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CEAF972F20D5496F00BF6896 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF972E20D5496F00BF6896 /* AlertService.swift */; };
+		CEAF973120D675ED00BF6896 /* CLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF973020D675ED00BF6896 /* CLService.swift */; };
 		CEDB63F920D2F38A0008124F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB63F820D2F38A0008124F /* AppDelegate.swift */; };
 		CEDB63FB20D2F38A0008124F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB63FA20D2F38A0008124F /* ViewController.swift */; };
 		CEDB63FE20D2F38A0008124F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEDB63FC20D2F38A0008124F /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		CEAF972E20D5496F00BF6896 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		CEAF973020D675ED00BF6896 /* CLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLService.swift; sourceTree = "<group>"; };
 		CEDB63F520D2F38A0008124F /* Remind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEDB63F820D2F38A0008124F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEDB63FA20D2F38A0008124F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 			children = (
 				CEDB641020D519BF0008124F /* UNService.swift */,
 				CEAF972E20D5496F00BF6896 /* AlertService.swift */,
+				CEAF973020D675ED00BF6896 /* CLService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEAF973120D675ED00BF6896 /* CLService.swift in Sources */,
 				CEDB640E20D428100008124F /* ShadowView.swift in Sources */,
 				CEDB63FB20D2F38A0008124F /* ViewController.swift in Sources */,
 				CEDB641120D519BF0008124F /* UNService.swift in Sources */,
