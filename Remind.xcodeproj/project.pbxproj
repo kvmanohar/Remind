@@ -11,6 +11,8 @@
 		CE70102A20D6D587009FCAE6 /* LocationAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = CE70102820D6D587009FCAE6 /* LocationAlert.png */; };
 		CE70102B20D6D587009FCAE6 /* DateAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = CE70102920D6D587009FCAE6 /* DateAlert.png */; };
 		CE70102D20D6D598009FCAE6 /* TimeAlert.png in Resources */ = {isa = PBXBuildFile; fileRef = CE70102C20D6D598009FCAE6 /* TimeAlert.png */; };
+		CE70102F20D84EA9009FCAE6 /* NotificationActionID.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70102E20D84EA9009FCAE6 /* NotificationActionID.swift */; };
+		CE70103120D85007009FCAE6 /* NotificaitonCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE70103020D85007009FCAE6 /* NotificaitonCategory.swift */; };
 		CEAF972F20D5496F00BF6896 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF972E20D5496F00BF6896 /* AlertService.swift */; };
 		CEAF973120D675ED00BF6896 /* CLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAF973020D675ED00BF6896 /* CLService.swift */; };
 		CEDB63F920D2F38A0008124F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEDB63F820D2F38A0008124F /* AppDelegate.swift */; };
@@ -27,6 +29,8 @@
 		CE70102820D6D587009FCAE6 /* LocationAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LocationAlert.png; sourceTree = "<group>"; };
 		CE70102920D6D587009FCAE6 /* DateAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DateAlert.png; sourceTree = "<group>"; };
 		CE70102C20D6D598009FCAE6 /* TimeAlert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TimeAlert.png; sourceTree = "<group>"; };
+		CE70102E20D84EA9009FCAE6 /* NotificationActionID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActionID.swift; sourceTree = "<group>"; };
+		CE70103020D85007009FCAE6 /* NotificaitonCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificaitonCategory.swift; sourceTree = "<group>"; };
 		CEAF972E20D5496F00BF6896 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		CEAF973020D675ED00BF6896 /* CLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLService.swift; sourceTree = "<group>"; };
 		CEDB63F520D2F38A0008124F /* Remind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remind.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				CE70102520D6D458009FCAE6 /* NotificationAttachmentID.swift */,
+				CE70102E20D84EA9009FCAE6 /* NotificationActionID.swift */,
+				CE70103020D85007009FCAE6 /* NotificaitonCategory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -204,11 +210,13 @@
 			files = (
 				CE70102620D6D458009FCAE6 /* NotificationAttachmentID.swift in Sources */,
 				CEAF973120D675ED00BF6896 /* CLService.swift in Sources */,
+				CE70103120D85007009FCAE6 /* NotificaitonCategory.swift in Sources */,
 				CEDB640E20D428100008124F /* ShadowView.swift in Sources */,
 				CEDB63FB20D2F38A0008124F /* ViewController.swift in Sources */,
 				CEDB641120D519BF0008124F /* UNService.swift in Sources */,
 				CEDB63F920D2F38A0008124F /* AppDelegate.swift in Sources */,
 				CEAF972F20D5496F00BF6896 /* AlertService.swift in Sources */,
+				CE70102F20D84EA9009FCAE6 /* NotificationActionID.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
